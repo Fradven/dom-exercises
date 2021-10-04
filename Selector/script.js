@@ -4,11 +4,9 @@ function rdmcolor(){
 }
 
 
-
-
-const important = document.querySelectorAll('.important');
+const important = document.querySelectorAll('.important')
 for (item of important) {
-    item.title = "This is an important item";
+    item.title = "This is an important item"
 }
 
 const images = document.querySelectorAll('img')
