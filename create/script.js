@@ -1,9 +1,3 @@
-function rdmcolor(){
-  let r = function () {return Math.floor(Math.random()*256)}
-  
-  return  `rgb(${r()}, ${r()}, ${r()})`
-}
-
 const learners = ["Antoine Ghysens", "Aurore Remy", "Baptiste Geron", "Batsheba Deepijan", "Bruno Presti", "Fabrice Castrogiovanni",
 "Fanny Fraiture", "Francis François", "Frederic Van Overmeire", "JC Molhant", "Maxim K.", "Michael Tesfay", 
 "Philippe Meulemans", "Raoni Gillet", "René", "Rouslan Boyko", "Stephane Genet", "Thomas Backers", "Tiffany Dessouroux"];
