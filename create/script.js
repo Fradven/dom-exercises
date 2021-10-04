@@ -18,6 +18,17 @@ const shuffleArray = array => {
 }
 shuffleArray(learners)
 
+const rand = (max) => {
+  return Math.floor(Math.random() * max +1);
+}
+
+const colorPicker = () => {
+  let red = rand(255);
+  let green = rand(255);
+  let blue = rand(255);
+  let brightness  =  Math.sqrt((.299 * red * red) + (.587 * green * green) + (.114 * blue * blue));
+  return {"color": `rgb(${red}, ${green}, ${blue})`, "brightness": brightness}
+}
 
 let article = document.querySelector("article")
 
@@ -37,17 +48,6 @@ for (item of learners) {
 
 }
 
-const rand = (max) => {
-  return Math.floor(Math.random() * max +1);
-}
-
-const colorPicker = () => {
-  let red = rand(255);
-  let green = rand(255);
-  let blue = rand(255);
-  let brightness  =  Math.sqrt((.299 * red * red) + (.587 * green * green) + (.114 * blue * blue));
-  return {"color": `rgb(${red}, ${green}, ${blue})`, "brightness": brightness}
-}
 
 
 
