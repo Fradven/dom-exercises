@@ -1,0 +1,7 @@
+const displayFirstname = document.querySelector("#display-firstname")
+const firstname = document.querySelector('#firstname')
+const age = document.querySelector("#age")
+const aHardTruth = document.querySelector("#a-hard-truth")
+const pwd = document.querySelector("#pwd")
+const pwdConfirm = document.querySelector("#pwd-confirm")
+const togglemode = document.querySelector("#toggle-darkmode")
