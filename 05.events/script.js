@@ -54,3 +54,7 @@ function keyPress(e) {
 }
 
 body.addEventListener('keypress', keyPress);
+
+document.addEventListener('click', (e) => {
+  if (e.target.classList[0] == "displayedsquare") alert(e.target.classList[1]);
+});
