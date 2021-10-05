@@ -13,9 +13,9 @@ function clickOnSquare(e){
   newDiv.classList.add(e.target.classList[1])
   parentSquare.append(newDiv)
   
-  let newli = document.createElement("li") 
-  newli.textContent = `[${getElapsedTime()}] Create a new ${elColor} square`
-  ul.append(newli)
+  let newLi = document.createElement('li');
+  newLi.textContent = `[${getElapsedTime()}] Created a ${e.target.classList[1]} square`;
+  ul.append(newLi);
   
   console.log(e.target.classList[1])
   console.log(getElapsedTime())
