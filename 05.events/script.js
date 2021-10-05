@@ -1,3 +1,8 @@
+function rdmcolor(){
+  let r = function () {return Math.floor(Math.random()*256)}
+  return `rgb(${r()}, ${r()}, ${r()})`
+}
+
 const _initTime = Date.now()
 const parentSquare = document.querySelector(".displayedsquare-wrapper")
 const ul = document.querySelector("ul")
@@ -26,3 +31,26 @@ const actionsquares = document.querySelectorAll('.actionsquare')
 for(let actionsquare of actionsquares){
   actionsquare.addEventListener('click', clickOnSquare)
 }
+
+function keyPress(e) {
+  switch (e.key) {
+    case " ": 
+      let newColor = rdmcolor()
+      body.style.backgroundColor = newColor
+      let newLi = document.createElement('li')
+      newLi.textContent = `[${getElapsedTime()}] Change the bg color to ${newColor}`
+      ul.append(newLi)
+      break;
+    
+    case "l":
+      let allLi = document.querySelectorAll('li')
+      for (item of allLi) item.remove()
+      break;
+
+    case "s":
+      let newSquare = document.querySelectorAll('.displayedsquare')
+      for (item of newSquare) item.remove()
+  }
+}
+
+body.addEventListener('keypress', keyPress);
